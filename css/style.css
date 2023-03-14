@@ -249,7 +249,7 @@ footer {
     color: #252525;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,7 +257,7 @@ footer {
     text-align: center;
 }
 
-.footer-content p{
+.footer-content p {
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
@@ -421,10 +421,3 @@ footer {
         height: 600px;
     }
 }
-
-
-
-
-
-
-
