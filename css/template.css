@@ -1,6 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 :root{
-    --accent:#ffc179;
+    --accent:#894B5D;
     --spacing:2.5em;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* Navbar */
@@ -9,7 +20,7 @@ nav {
 }
 
 div.nav2 > ul {
-    background-color: #B97B35;
+    background-color: #85A094;
     box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.49);
     -webkit-box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.49);
     -moz-box-shadow: -1px 6px 5px 0px rgba(0,0,0,0.49);
@@ -18,28 +29,28 @@ div.nav2 > ul {
 /* Botones */
 button.registra {
     color: white;
-    background-color: #A25819;
+    background-color: #85A094;
     font-weight: bold;
     width: 120px;
 }
 
 button.registra:hover {
     color: white;
-    background-color: #723e10;
+    background-color: #60746b;
     font-weight: bold;
     width: 120px;
 }
 
 button.inicia {
-    color: #B97B35;
-    border: solid 1px #B97B35;
+    color: #85A094;
+    border: solid 1px #85A094;
     font-weight: bold;
     width: 120px;
 }
 
 button.inicia:hover {
     color: white;
-    background-color: #A25819;
+    background-color: #85A094;
     font-weight: bold;
     width: 120px;
 }
@@ -76,82 +87,15 @@ button.buscar:hover {
     -moz-box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.1) inset;
 }
 
-/* Header Body */
-.header-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 3em;
-    justify-content: center;
-    align-content: center;
-}
-
-.header-body > div {
-  margin: -6rem var(--spacing);   
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-}
-
-.slider {
-    position: relative;
-}
-
-.decoration-left, .decoration-right {
-    background-color: var(--accent);
-    position: absolute;
-    z-index: 1;
-}
-
-.decoration-left {
-    top: 50%;
-    left: -8%;
-    width: 16%;
-    height: 70%;
-    transform: translateY(-50%);
-    writing-mode: vertical-rl;
-    color:#fff;
-    font-size: 0.8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: slide1;
-}
-
-.decoration-right {
-    bottom: 0;
-    right: -8%;
-    width: 16%;
-    height: 12em;
-    animation: slide2;
-}
-
-.text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text > div{
-    max-width: 27em;
-}
-
-.text p {
-    background-image: linear-gradient(0deg, var(--accent), var(--accent));
-    background-repeat: no-repeat;
-    background-size: 3px 100%;
-    padding-left: var(--spacing);
-    background-position: 0 0; 
-}
-
 /* Footer */
 footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #DAB181;
+    background: #E3E3E3;
     width: 100%;
     color: #252525;
+
 }
 
 .footer-content {
@@ -160,6 +104,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding-bottom: .5rem;
 }
 
 .footer-content p {
@@ -175,20 +120,20 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1.2rem;
+    padding: 1.2rem;
 }
 
 .socials li {
-    margin: 0 10px;
+    margin: 5px 2rem -1.5rem;
 }
 
 .socials a {
     text-decoration: none;
-    color: #252525;
+    color: rgba(37, 37, 37, 0.85);
 }
 
 .socials a i {
-    font-size: 1.1rem;
+    font-size: 35px;
     width: 20px;
     transition: color .4s ease;
 }
@@ -198,7 +143,7 @@ footer {
 }
 
 .footer-bottom {
-    background: #684014;
+    background: #85A094;
     text-align: center;
 }
 
@@ -206,14 +151,19 @@ footer {
     color: white;
     font-weight: 400;
     font-size: 16px;
-    text-transform: capitalize;
-    padding: .5rem 0;
+    padding: 1rem 5rem;
 }
 
-.footer-bottom p a {
-   color: #252525;
-   font-size: 16px;
-   text-decoration: none;
+footer p > a {
+    color: #252525;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+footer p > a:hover {
+    color: #252525;
+    font-size: 16px;
+    text-decoration: underline;
 }
 
 .footer-bottom span {
@@ -222,10 +172,37 @@ footer {
      font-weight: 200;
 }
 
+/* Animaciones*/
+@keyframes slide1 {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 70%;
+    }
+}
+
+@keyframes slide2 {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 12em;
+    }
+}
+
+@keyframes slide3 {
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 0;
+    }
+}
+
 /* responsive */
-
 @media screen and (max-width: 1000px) {
-
+    
 }
 
 @media screen and (max-width:850px) {
@@ -253,8 +230,14 @@ footer {
     .decoration-right {
         display: none;
     }
+
+    input.form-control {
+        width: 400px;
+    }
 }
 
-@media  screen and (max-height: 430px) {
-
+@media  screen and (max-width: 430px) {
+    input.form-control {
+        width: 300px;
+    }
 }
