@@ -67,10 +67,10 @@
 }
 
 .c:nth-child(3){
-    animation-delay: 1.5s;
+    animation-delay: 1.6s;
 }
 .c:nth-child(4){
-    animation-delay: 3s;
+    animation-delay: 3.6s;
 }
 
 .right-container .circulo{
@@ -107,9 +107,9 @@
 }
 
 .cir2 {
-    font-weight: bold;
+    
     z-index: 10;
-    background-color: #E3C1BE;
+    background-color: #EAD9D8;
 }
 
 .cir3 {
@@ -118,6 +118,8 @@
     outline: 3px solid #E3C1BE;
     outline-offset: -3px;
 }
+
+
 
 .c1 {
     font-weight: normal;
@@ -129,8 +131,9 @@
 }
 
 .c2 {
-    font-weight: bold;
-    background: #E3C1BE;
+    
+    background: #EAD9D8;
+    
 }
 
 .c3 h2 {
@@ -150,7 +153,7 @@
 }
 
 .arrow2 {
-    background-color: #E3C1BE;
+    background-color: #EAD9D8;
     z-index: -1000;
 }
 
