@@ -23,6 +23,10 @@ div.nav2 > ul {
     background-color: #85A094;
 }
 
+.nav-item {
+    font-size: 20px;
+}
+
 /* Botones */
 button.registra {
     color: white;
@@ -364,4 +368,19 @@ footer p > a:hover {
     100% {
       transform: translateY(10px);
     }
+}
+
+.card-section{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    background-color: #894B5D;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-title{
+    color: #ffff;
+    margin-top: 7%;
 }
