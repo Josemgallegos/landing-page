@@ -673,7 +673,7 @@ button#myBtn {
 .label-register{
     font-weight: 600;
     margin-bottom: 2%;
-    margin-top: 6%;
+    margin-top: 4%;
 }
 
 /*      File input       */
@@ -769,10 +769,11 @@ button#myBtn {
 }
 
 input[type="checkbox"] {
+    margin-top: 3%;
     appearance: none;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #ccc;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #000;
     border-radius: 3px;
     position: relative;
     cursor: pointer;
@@ -794,5 +795,5 @@ input[type="checkbox"] {
   
   input[type="checkbox"]:checked::before {
     opacity: 1;
-    background-color: #60746b;
+    background-color: #000;
   }
