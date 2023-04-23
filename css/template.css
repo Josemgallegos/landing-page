@@ -243,7 +243,6 @@ footer p > a:hover {
     }
 }
 
-
 .timeline{
     position: relative;
     max-width: 900px;
@@ -371,8 +370,8 @@ footer p > a:hover {
 }
 
 .card-section{
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: #894B5D;
     width: 100%;
     height: 300px;
@@ -384,5 +383,296 @@ footer p > a:hover {
     color: #ffff;
     margin-top: 7%;
     margin-left: 5%;
+}
+
+/* Procesos Destacados */
+.process-featured-container {
+    padding-bottom: 2%;
+}
+
+.process-featured {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.process-featured-content {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.process-featured-title {
+    padding: 0 30px 0;
+}
+
+.process-featured-title2 {
+    padding: 26px 30px 0;
+    font-size: 28px;
+}
+
+.process-featured-text {
+    padding: 26px 30px 0;
+    font-size: 16px;
+    margin: 0;
+}
+
+.process-featured-list {
+    padding: 0 80px 0;
+    font-size: 16px;
 
 }
+
+.process-featured-t-footer {
+    padding: 0 30px 0;
+    font-size: 16px;
+}
+
+.process-featured-button-1 {
+    padding: 10px 16px;
+    font-weight: bold;
+    width: 165px;
+    color: #894B5D;
+    background-color: white;
+    border: 1px solid #894B5D;
+    border-radius: 6px;
+}
+
+.process-featured-button-2 {
+    padding: 10px 16px;
+    font-weight: bold;
+    width: 165px;
+    color: white;
+    background-color: #894B5D;
+    border: 1px solid #894B5D;
+    border-radius: 6px; 
+}
+
+.process-featured-button-2-large {
+    padding: 10px 16px;
+    font-weight: bold;
+    width: 250px;
+    color: white;
+    background-color: #894B5D;
+    border: 1px solid #894B5D;
+    border-radius: 6px; 
+}
+
+.process-featured-button-3 {
+    padding: 10px 16px;
+    font-weight: 600;
+    color: #252525;
+    background-color: #da9dae;
+    border: 1px solid #da9dae;
+    border-radius: 30px; 
+}
+
+.process-featured-button-3-large {
+    padding: 10px 16px;
+    font-weight: bold;
+    width: 250px;
+    color: #894B5D;
+    background-color: white;
+    border: 1px solid #894B5D;
+    border-radius: 6px;
+}
+
+/* Procesos */
+.process-filter {
+    display: flex; 
+    gap: 3%;
+}
+
+.process-filter > h4 > a {
+    text-decoration: none;
+    color: #a0a0a0;
+}
+
+.process-filter > h4 > a:hover {
+    text-decoration: underline;
+    color: #0089A6;
+}
+
+.see-process {
+    font-weight: 300;
+}
+
+.process-title {
+    margin-top: 5rem; 
+    margin-bottom: 10rem;
+}
+
+.process-title > h1 {
+    text-align: center; 
+    margin-bottom: -4rem; 
+    font-weight: normal;
+    font-size: 48px;
+}
+
+.process-content {
+    margin-top: 4rem; 
+    margin-bottom: 10rem;
+}
+
+.process-content-2{
+    margin-top: 4rem; 
+    margin-bottom: 3rem;
+}
+
+.process-select {
+    padding: .2rem 1.2rem .2rem .3rem; 
+    width: 200px; 
+    min-width: 250px; 
+    border-radius: 6px; 
+    border: .5px solid black;
+}
+
+.process-line {
+    background-color: #894B5D; 
+    height: 12px;
+}
+
+.process-title-card {
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+.process-content-card {
+    text-align: left; 
+    font-size: 12px;
+    color: #252525;
+}
+
+.process-date-card {
+    text-align: center; 
+    font-size: 12px; 
+    padding-top: 6%;
+}
+
+.process-bell-active {
+    position: relative; 
+    left: 30%; 
+    color: #894B5D;
+}
+
+.process-bell {
+    position: relative; 
+    left: 30%; 
+    color: #894B5D;
+}
+
+.process-status-card {
+    text-align: center; 
+    font-size: 12px; 
+    padding-top: 6%;
+}
+
+.process-button {
+    padding: 4px 16px;
+    font-weight: 600;
+    color: #252525;
+    background-color: #da9dae;
+    border: 1px solid #da9dae;
+    border-radius: 30px; 
+}
+
+.process-button-card {
+    width: 100%;
+    margin-top: 5%; 
+    margin-bottom: 5%; 
+    border: 0; 
+    border-radius: 6px; 
+    padding: .4rem 0; 
+    color: white; 
+    background-color: #894B5D;
+}
+
+/* PARTICIPA 2 */
+/* Navegacion  */
+.nav3 {
+    padding: 1rem 0 .5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav3 > h5 > a {
+    color: #894B5D;
+    text-decoration: none;
+    padding-bottom: .6rem;
+    transition: 300ms ease-in;
+}
+
+.nav3 > h5 > a.a-active {
+    color: #894B5D;
+    text-decoration: none;
+    box-shadow: inset 0 -3px 0 0 #894B5D;
+    padding-bottom: .6rem;
+    display: inline-block;
+}
+
+.nav3 > h5 > a:hover {
+    color: #894B5D;
+    text-decoration: none;
+    box-shadow: inset 0 -3px 0 0 #894B5D;
+    padding-bottom: .6rem;
+    display: inline-block;
+    transition: 300ms ease-out;
+}
+
+/* Filtro */
+.process-select-2 {
+    padding: .2rem 1.2rem .2rem .3rem; 
+    border-radius: 6px; 
+    border: none;
+    background-color: transparent;
+}
+.process-select-3 {
+    padding: .2rem 1.2rem .2rem .3rem; 
+    border-radius: 6px; 
+    border: none;
+    background-color: transparent;
+}
+
+/* Boton para ver mas */
+#moreOptions {
+    display: none;
+}
+
+.moreOptions {
+    margin-left: 1rem;
+}
+
+button#myBtn {
+    background-color: transparent;
+    border: none;
+    padding-left: 90%;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+/* forms styles*/
+
+.form-div{
+    height: 100%; 
+    background-color: #EAD9D8; 
+    border-radius: 5px;
+    margin-bottom:10%;
+    
+}
+
+.f-register{
+    margin-top: 10%;
+    margin-bottom:10%;
+    font-size: 18px;
+}
+
+.label-register{
+    font-weight: 600;
+    margin-bottom: 2%;
+    margin-top: 6%;
+}
+
