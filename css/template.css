@@ -713,5 +713,86 @@ button#myBtn {
     cursor: pointer;
 }
 
+.encabezado2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 80px;
+}
 
+.formulario {
+    width: 300px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.encabezado {
+    filter: grayscale(10%);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiper {
+    color: #85A094;
+    text-decoration: underline;
+}
+
+.hiper:hover {
+    color: #EAD9D8;
+    text-decoration: none;
+}
+
+.hiper:visited {
+    color: #85A094;
+}
+
+.botton {
+    color: white;
+    background-color: #85A094;
+    font-weight: bold;
+    width: 120px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.botton:hover {
+    color: white;
+    background-color: #60746b;
+    font-weight: bold;
+    width: 120px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: #ccc;
+    opacity: 0;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    opacity: 1;
+    background-color: #60746b;
+  }
