@@ -81,8 +81,8 @@
         <h2 style="font-weight: 350;">Consulta las Bases y ¡ALISTA TUS DOCUMENTOS PARA REGISTRATE!<br>Puedes hacerelo en línea desde cualquier dispositivo móvil con conexion a Internet o acercanote a alguno de los Centros de Atencion Municipal. </h2>
     </div>
     <div class="container">
-        <div class="container form-div d-flex justify-content-center" style="margin-top: 3%; min-width: 70%;">
-            <form>
+        <div class="container form-div d-flex justify-content-center" style="margin-top: 3%; width: 70%;">
+            <form style="width: 75%;">
                 <div class="form-group f-register"  >
                     <i><p style="font-weight: 500; color: #894B5D;"> * Los campos requeridos están marcados con un asterisco</p></i>
                     <label class="label-register">1. Email address *</label>
@@ -98,24 +98,47 @@
                     <label class="label-register">4. Colonia *</label>
                     <small><i><small><p>  Escriba su Colonia</p></small></i></small>
                     <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="Ciudad General Escobedo">
+                    
+                    
                     <label class="label-register">5. Identificación del Insituto Nacional VIGENTE *</label>
                     <small><i><small><p> Adjunte su archivo de INE</p></small></i></small>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1"> <br>
+                    
+                    <div class="file-input">
+                      <input type="file" name="file" id="file">
+                      <label for="file">Elegir archivo</label>
+                    </div>
+
                     <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+                    
                     <label class="label-register">6. FOTO POR LA PARTE DE ATRAS de la Identificación del Instituto Nacional Electoral VIGENTE *</label>
                     <small><i><small><p>  Adjunte el archivo de su INE o IFE</p></small></i></small>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
+                    <div class="file-input">
+                      <input type="file" name="file" id="file">
+                      <label for="file">Elegir archivo</label>
+                    </div>
                     <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+                    
                     <label class="label-register">7. Comprobante de domicilio *</label><br>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1"><br>
+                    <div class="file-input">
+                      <input type="file" name="file" id="file">
+                      <label for="file">Elegir archivo</label>
+                    </div>
                     <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+                    
                     <label class="label-register">8. CURP *</label>
                     <small><i><small><p>  Escriba su CURP</p></small></i></small>
                     <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="LEOJ970424HNLJGN01">
+                    
                     <label class="label-register">9. Foto de perfil del Rostro de la persona postulante*</label>
                     <small><i><small><p>Adjunte una imagen suya con los docuemntos INE o Constancia en la mano</p></small></i></small>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1"><br><br>
-                    <p class="mt-4"><input type="checkbox"> Aceptar los Términos y condiciones de Uso</p>
+                    <div class="file-input">
+                      <input type="file" name="file" id="file">
+                      <label for="file">Elegir archivo</label>
+                    </div>
+                    <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+                    <br><br>
+                    
+                    <p class="mt-2"><input type="checkbox"> Aceptar los Términos y condiciones de Uso</p>
                     <small><i><small><p> La informacion de datos personales que se recaben son con fines de Consulta Extraordinaria. <a href="/"> Puedes revisar el aviso de privacidad integral aqui </a></p></small></i></small>
 
                     <center><button class="process-featured-button-2-large mt-5">ENVIAR RESPUESTAS</button></center>
