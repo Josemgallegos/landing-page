@@ -1,0 +1,63 @@
+/** TEXTO */
+h1 {
+    size: 48px;
+}
+h2 {
+    size: 32px;
+}
+h3 {
+    size: 28px;
+}
+h4 {
+    size: 24px;
+}
+p {
+    size: 16px;
+}
+
+.contenido {
+    margin-top: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.tabs-ayuda {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 66%;
+}
+.tabs button{
+    width: 100%;
+    background-color: inherit;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.tabs button:hover { /** boton - hover */
+    background-color: #ddd;
+}
+.tabs button.active { /** boton - activo */
+    background-color: #ccc;
+}
+.info {
+    background-color: pink;
+}
+.tabs > div {
+    border: 1px solid;
+}
+.tabcontent { /** contenido de cada categoria */
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    text-align: justify;
+}
