@@ -201,7 +201,7 @@ footer p > a:hover {
     }
 }
 
-/* responsive */
+/* Responsivo */
 @media screen and (max-width: 1000px) {
     
 }
@@ -242,7 +242,6 @@ footer p > a:hover {
         width: 300px;
     }
 }
-
 
 
 .card-section{
@@ -413,6 +412,7 @@ footer p > a:hover {
 .process-title-card {
     font-size: 20px;
     padding-top: 1rem;
+    margin: 0;
 }
 
 .process-content-card {
@@ -424,7 +424,8 @@ footer p > a:hover {
 .process-date-card {
     text-align: center; 
     font-size: 12px; 
-    padding-top: 6%;
+    padding-top: 8px;
+    margin-bottom: 8px;
 }
 
 .process-bell-active {
@@ -442,7 +443,8 @@ footer p > a:hover {
 .process-status-card {
     text-align: center; 
     font-size: 12px; 
-    padding-top: 6%;
+    padding-top: 8px;
+    margin-bottom: 8px;
 }
 
 .process-button {
@@ -497,6 +499,17 @@ footer p > a:hover {
     transition: 300ms ease-out;
 }
 
+.btn-follow {
+    color: #894B5D !important;
+    border: 2px solid #894B5D !important;
+}
+
+.btn-follow:hover {
+    background-color: #894B5D !important;
+    color: white !important;
+    border: 2px solid #894B5D !important;
+}
+
 /* Filtro */
 .process-select-2 {
     padding: .2rem 1.2rem .2rem .3rem; 
@@ -535,7 +548,6 @@ button#myBtn {
 }
 
 /* forms styles*/
-
 .form-div{
     height: 100%; 
     background-color: #EAD9D8; 
@@ -557,9 +569,6 @@ button#myBtn {
 }
 
 /*      File input       */
-
-
-
 .file-input {
     position: relative;
     overflow: hidden;
@@ -580,7 +589,6 @@ button#myBtn {
     cursor: inherit;
     display: block;
 }
-
 
 .file-input label {
     display: inline-block;
@@ -648,7 +656,8 @@ button#myBtn {
     width: 120px;
 }
 
-input[type="checkbox"] {
+/*** Y ESTO??? ***/
+/* input[type="checkbox"] {
     margin-top: 3%;
     appearance: none;
     width: 13px;
@@ -676,4 +685,38 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked::before {
     opacity: 1;
     background-color: #000;
+  } */
+
+  /* Fichas Activas */
+  .button-popup {
+    padding: 3px 10px;
+    background-color: #894B5D;
+    border: 1px solid #894B5D;
+    color: white;
+    border-radius: 3px;
   }
+  
+  #popup {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 1px 1px 1px 10000px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 600px;
+    padding: 25px 40px;
+  }
+  
+  #cerrarPopup {
+    background-color: transparent;
+    color: #252525;
+    border: none;
+    border-radius: 3px;
+    font-size: 24px;
+  }
+  
+
+    
