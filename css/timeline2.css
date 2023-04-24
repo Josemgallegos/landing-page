@@ -60,12 +60,12 @@
     margin: 50px auto;
 }
 
-.c{
+.c-off-animate{
     padding: 10px 50px;
     position: relative;
     width: 85%;
 
-    opacity: 0;
+    opacity: 1;
 }
 
 .t{

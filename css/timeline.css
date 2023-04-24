@@ -67,10 +67,10 @@
 }
 
 .c:nth-child(3){
-    animation-delay: 1.6s;
+    animation-delay: 1.2s;
 }
 .c:nth-child(4){
-    animation-delay: 3.6s;
+    animation-delay: 2.1s;
 }
 
 .right-container .circulo{
@@ -209,7 +209,7 @@
     height: 100%;
     left: 49.80%;
     position: absolute;
-    animation: a 4s linear forwards;
+    animation: a 2s linear forwards;
 }
 
 @keyframes a {
