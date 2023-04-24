@@ -82,65 +82,142 @@
     </div>
     <div class="container">
         <div class="container form-div d-flex justify-content-center" style="margin-top: 3%; width: 70%;">
-            <form style="width: 75%;">
+            <form class="needs-validation" style="width: 75%;" novalidate>
                 <div class="form-group f-register"  >
                     <i><p style="font-weight: 500; color: #894B5D;"> * Los campos requeridos están marcados con un asterisco</p></i>
-                    <label class="label-register">1. Email address *</label>
-                    <small><i><small><p>  Escriba su nombre Completo</p></small></i></small>
-                    <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="jose.gallegos@udem.edu">
-                    <label class="label-register">2. Telefono Contacto *</label>
-                    <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="8119890949">
-                    <i><small><p style="font-weight: 500;">  Maximo 10 caracteres</p></small></i>
-                    <label class="label-register">3. Seccion *</label>
-                    <small><i><small><p>  Escriba su seccion</p></small></i></small>
-                    <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="ABCD">
-                    <i><small><p style="font-weight: 500;">  Maximo 4 caracteres</p></small></i>
-                    <label class="label-register">4. Colonia *</label>
-                    <small><i><small><p>  Escriba su Colonia</p></small></i></small>
-                    <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="Ciudad General Escobedo">
+
+                    <div>
+                      <label class="label-register">1. Email address *</label>
+                      <small><i><small><p>  Escriba su correo</p></small></i></small>
+                      <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="jose.gallegos@udem.edu" required>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
+                    </div>
                     
+                    <div>
+                      <label class="label-register">2. Telefono Contacto *</label>
+                      <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="8119890949" required>
+                      <i><small><p style="font-weight: 500;">  Maximo 10 caracteres</p></small></i>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
+                    </div>
                     
-                    <label class="label-register">5. Identificación del Insituto Nacional VIGENTE *</label>
-                    <small><i><small><p> Adjunte su archivo de INE</p></small></i></small>
+                    <div>
+                      <label class="label-register">3. Seccion *</label>
+                      <small><i><small><p> Escriba su seccion</p></small></i></small>
+                      <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="ABCD" required>
+                      <i><small><p style="font-weight: 500;">  Maximo 4 caracteres</p></small></i>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
+                    </div>
                     
-                    <div class="file-input">
-                      <input type="file" name="file" id="file">
-                      <label for="file">Elegir archivo</label>
+                    <div>
+                      <label class="label-register">4. Colonia *</label>
+                      <small><i><small><p>  Escriba su Colonia</p></small></i></small>
+                      <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="Ciudad General Escobedo" required>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <label class="label-register">5. Identificación del Insituto Nacional VIGENTE *</label>
+                      <small><i><small><p> Adjunte su archivo de INE</p></small></i></small>
+                      
+                      <div class="file-input">
+                        <input type="file" name="file" id="file" required>
+                        <label for="file">Elegir archivo</label>
+                      </div>
+
+                      <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
                     </div>
 
-                    <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
-                    
-                    <label class="label-register">6. FOTO POR LA PARTE DE ATRAS de la Identificación del Instituto Nacional Electoral VIGENTE *</label>
-                    <small><i><small><p>  Adjunte el archivo de su INE o IFE</p></small></i></small>
-                    <div class="file-input">
-                      <input type="file" name="file" id="file">
-                      <label for="file">Elegir archivo</label>
+                    <div>
+                      <label class="label-register">6. FOTO POR LA PARTE DE ATRAS de la Identificación del Instituto Nacional Electoral VIGENTE *</label>
+                      <small><i><small><p>  Adjunte el archivo de su INE o IFE</p></small></i></small>
+                      <div class="file-input">
+                        <input type="file" name="file" id="file">
+                        <label for="file">Elegir archivo</label>
+                      </div>
+                      <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
                     </div>
-                    <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
                     
-                    <label class="label-register">7. Comprobante de domicilio *</label><br>
-                    <div class="file-input">
-                      <input type="file" name="file" id="file">
-                      <label for="file">Elegir archivo</label>
+                    <div>
+                      <label class="label-register">7. Comprobante de domicilio *</label><br>
+                      <div class="file-input">
+                        <input type="file" name="file" id="file" required>
+                        <label for="file">Elegir archivo</label>
+                      </div>
+                      <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
                     </div>
-                    <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
-                    
-                    <label class="label-register">8. CURP *</label>
-                    <small><i><small><p>  Escriba su CURP</p></small></i></small>
-                    <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="LEOJ970424HNLJGN01">
-                    
-                    <label class="label-register">9. Foto de perfil del Rostro de la persona postulante*</label>
-                    <small><i><small><p>Adjunte una imagen suya con los docuemntos INE o Constancia en la mano</p></small></i></small>
-                    <div class="file-input">
-                      <input type="file" name="file" id="file">
-                      <label for="file">Elegir archivo</label>
+
+                    <div>
+                      <label class="label-register">8. CURP *</label>
+                      <small><i><small><p>  Escriba su CURP</p></small></i></small>
+                      <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="LEOJ970424HNLJGN01" required>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
                     </div>
-                    <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+
+                    <div>
+                      <label class="label-register">9. Foto de perfil del Rostro de la persona postulante*</label>
+                      <small><i><small><p>Adjunte una imagen suya con los docuemntos INE o Constancia en la mano</p></small></i></small>
+                      <div class="file-input">
+                        <input type="file" name="file" id="file" required>
+                        <label for="file">Elegir archivo</label>
+                      </div>
+                      <i><small><p style="font-weight: 500;"> Archivo JPG o PDF de máximo 5MB</p></small></i>
+                      <div class="valid-feedback">
+                        Todo bien
+                      </div>
+                      <div class="invalid-feedback">
+                        Campo Obligatorio
+                      </div>
+                    </div>
+
+
                     <br>
                     <p><input type="checkbox"> Aceptar los Términos y condiciones de Uso</p>
                     <small><i><small><p> La informacion de datos personales que se recaben son con fines de Consulta Extraordinaria. <a href="/"> Puedes revisar el aviso de privacidad integral aqui </a></p></small></i></small>
 
-                    <center><button class="process-featured-button-2-large mt-5">ENVIAR RESPUESTAS</button></center>
+                    <center><button class="process-featured-button-2-large mt-5" type="submit">ENVIAR RESPUESTAS</button></center>
                 </div>
             </form>
         </div>
@@ -162,5 +239,6 @@
     </div>
   </footer>
   <!-- End Footer -->
+  <script src="js/script.js"></script>
 </body>
 </html>

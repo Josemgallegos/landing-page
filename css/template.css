@@ -789,8 +789,8 @@ input[type="checkbox"] {
     width: 10px;
     height: 10px;
     border-radius: 2px;
-    background-color: #ccc;
-    opacity: 0;
+    background-color: #fff;
+    opacity: 1;
   }
   
   input[type="checkbox"]:checked::before {
