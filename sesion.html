@@ -61,31 +61,44 @@
         </ul>
     </div>
     
-        <div class="encabezado">
-            <h1> Iniciar sesión </h1>
+        <div class="container d-flex justify-content-center text-center" style="margin-top: 5%;">
+            <h2 style="font-weight: 600;">INICIAR SESIÓN </h2>
         </div>
-
-        <br>
-
-        <div class="encabezado2">
-            <h5> ¿Eres nueva en la plataforma? <a href="registrarse.html" class="hiper"> Créate una cuenta </a> </h5>
+        <div class="container mt-4">
+            <center><p style="font-weight: 300;">¿Ya tienes una cuenta? <a href="">Iniciar Sesión</a></p></center>
+            <center><p style="font-weight: 300;">¿Olvidaste tu contraseña? <a href="">Recuperar Contraseña</a></p></center>
         </div>
-        <div class="container">
-            <div class="container form-div d-flex justify-content-center" style="min-width: 100%;">
-                <form action="/index.html" method="post">
-                    <div class="form-group f-register">
-                        <label class="label-register" for="username">Correo electrónico: </label>
-                        <input type="email" class="form-control w-1000" id="exampleFormControlInput1" name="username" placeholder="Correo electrónico"><br>
-                        <label class="label-register" for="password">Contraseña:</label>
-                        <input type="password" class="form-control w-1000" id="exampleFormControlInput1" name="password" placeholder="Constraseña"><br>
-                        <input type="checkbox" id="recuerdame">
-                        <label class="label-register2" for="recuerdame"> Recuérdame </label><br>
-                        <button class="btn me-3 my-3 registra w-100">Iniciar sesión</button>
+        <div class="container mt-5">
+            <div class="container form-div d-flex justify-content-center" style="margin-top: 3%; width: 70%;">
+                <form class="needs-validation" style="width: 75%;" id="form" novalidate>
+                    <div class="form-group f-register"  >
+                        <div>
+                          <label class="label-register">Correo Electrónico</label>
+                          <input type="nombre" class="form-control w-100" id="nombre" placeholder="jose.gallegos@udem.edu" required>
+                          <div class="valid-feedback">
+                            Todo bien
+                          </div>
+                          <div class="invalid-feedback">
+                            Campo Obligatorio
+                          </div>
+                        </div>
+      
+                        <div>
+                          <label class="label-register">Contraseña</label>
+                          <input type="password" class="form-control w-100" id="email" placeholder="Contraseña" required>
+                          <div class="valid-feedback">
+                            Todo bien
+                          </div>
+                          <div class="invalid-feedback">
+                            Campo Obligatorio
+                          </div>
+                        </div>
+                        <p class="mt-2"><input type="checkbox"> Recuérdame </p>
+                        <center><button class="process-featured-button-2-large mt-4"> REGISTRARTE</button></center>
                     </div>
                 </form>
             </div>
         </div>
-
         
 
       <!-- Start Footer -->
@@ -104,3 +117,7 @@
     </div>
   </footer>
   <!-- End Footer -->
+  <script src="js/script.js"></script>
+  </body>
+  </html>
+  
