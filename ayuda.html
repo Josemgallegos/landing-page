@@ -24,49 +24,46 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 </head>
 <body style="font-family: Roboto;">
-    <!-- Start Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 200px;" alt="LOGO"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0 text-center">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="participa.html">Participa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: black;" href="ayuda.html">Ayuda</a>
-          </li>
-        </ul>
-        <div class="text-center">
-            <a href="registrarse.html"><button class="btn me-3 my-3 registra">Regístrate</button></a>
-            <a href="sesion.html"><button class="btn ms-3 my-3 inicia">Inicia Sesión</button></a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 200px;" alt="LOGO"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item mx-5">
+                    <a class="nav-link" href="#">Participa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: black;" href="#">Ayuda</a>
+                </li>
+            </ul>
+                <div class="text-center">
+                    <button class="btn me-3 my-3 registra">Regístrate</button>
+                    <button class="btn ms-3 my-3 inicia">Inicia Sesión</button>
+                </div>
+            </div>
         </div>
-      </div>
+    </nav>
+    <div class="nav2">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <form class="d-flex my-3">
+                    <input class="form-control" type="search" placeholder="Buscar convocatorias, etc..." aria-label="Search">
+                    <button class="btn buscar" type="submit">
+                        <i class='fa-solid fa-magnifying-glass'></i>
+                    </button>
+                </form>
+            </li>
+        </ul>
     </div>
-  </nav>
-  <div class="nav2">
-      <ul class="nav justify-content-center">
-          <li class="nav-item">
-              <form class="d-flex my-3">
-                  <input class="form-control" type="search" placeholder="Buscar convocatorias, participantes, etc..." aria-label="Search">
-                  <button class="btn buscar" type="submit">
-                      <i class='fa-solid fa-magnifying-glass'></i>
-                  </button>
-              </form>
-          </li>
-      </ul>
-  </div>
-  <!-- End Navbar -->
     
     <div class="contenido">
-        
-        <center>
+        <center>    
             <h1>Ayuda</h1>
             <p>En esta sección podrás resolver tus dudas y encontrar distintos recursos para participar en la plataforma.</p>
         </center>
@@ -79,12 +76,13 @@
                 <div><button id="opc4" class="tablinks" onclick="openCat(event,'info4')">¿Cómo obtener mi carta de residencia?</button></div>
                 <div><button id="opc5" class="tablinks" onclick="openCat(event,'info5')">Propuestas</button></div>
                 <div><button id="opc6" class="tablinks" onclick="openCat(event,'info6')">Votación</button></div>
-                <div><button id="opc7" class="tablinks" onclick="openCat(event,'info7')">Monto por sector</button></div>
-                <div><button id="opc8" class="tablinks" onclick="openCat(event,'info8')">¿A qué sector pertenece mi colonia?</button></div>
-                <div><button id="opc9" class="tablinks" onclick="openCat(event,'info9')">El presupuesto participativo</button></div>
+                <div><button id="opc7" class="tablinks" onclick="openCat(event,'info7')">Participación en bibliotecas</button></div>
+                <div><button id="opc8" class="tablinks" onclick="openCat(event,'info8')">Monto por sector</button></div>
+                <div><button id="opc9" class="tablinks" onclick="openCat(event,'info9')">¿A qué sector pertenece mi colonia?</button></div>
+                <div class="off-canvas"></div>
             </div>
             <div class="info">
-                <div id="info1" class="tabcontent">
+                <div id="info1" class="tabcontent" style="display: block;">
                     <h2>El presupuesto participativo</h2>
                     <h4>¿Qué es un presupuesto participativo?</h4>
                     <p>Es un mecanismo de participación ciudadana a través del que las personas deciden en qué se gasta una parte de los recursos públicos.</p>
@@ -118,14 +116,288 @@
                     <p>No, cada presupuesto está relacionado con un período fiscal, por lo que no puede acumularse para el siguiente año.</p>
                 </div>
                 <div id="info3" class="tabcontent">
-                    <h4>Requisitos para participar</h4>
+                    <h2>Requisitos para participar</h2>
+                    <h4>¿Quiénes pueden participar?</h4>
+                    <p>Toda la ciudadanía mayor de 18 años que pueda acreditar su residencia en Monterrey a través de una INE vigente o una Carta de Residencia expedida por la Dirección de Concertación Social.</p>
+                    <h4>¿Por qué tengo que cargar una INE que muestre domicilio o una Carta de Residencia?</h4>
+                    <p>Para que acreditemos tu identidad, podamos generar un identificador único para tu cuenta y nos aseguremos de que resides en Monterrey.</p>
+                    <h4>Si tengo propiedades en más de un sector, ¿puedo participar en esos sectores?</h4>
+                    <p>No, cada persona puede votar únicamente una vez y registrar propuestas solo para el sector donde reside según muestra su INE o Carta de Residencia. El derecho de participación se extiende por ciudadano.</p>
+                    <h4>Para poder proponer y votar proyectos, necesitas una cuenta verificada:</h4>
+                    <ol>
+                        <li>Lo primero que tienes que hacer es crear una cuenta, para ello da click en "Regístrate" en la esquina superior derecha.</li>
+                        <li>Ingresa tus datos personales, crea un nombre de usuario y da click en "Regístrate".</li>
+                        <li>En breve recibirás un correo en la dirección de correo electrónico que registraste donde se te pide confirmar tu cuenta. Da click en "confirmar" dentro del correo.</li>
+                        <li>Ahora tienes que verificar tu cuenta, para ello da click en "Verificación INE / Carta de Residencia", ahí completa tu información personal y carga una foto del documento. OJO: los datos que ingreses deben coincidir con los del documento.</li>
+                        <li>Ahora tu cuenta será verificada de manera manual por personal de la Secretaría, cuando esté listo recibirás un correo en la dirección e-mail que registraste. En caso de haber algún error, se te pedirá corregirlo.</li>
+                    </ol>
                 </div>
-                <div id="info4" class="tabcontent">ddd</div>
-                <div id="info5" class="tabcontent">eee</div>
-                <div id="info6" class="tabcontent">fff</div>
-                <div id="info7" class="tabcontent">ggg</div>
-                <div id="info8" class="tabcontent">hhh</div>
-                <div id="info9" class="tabcontent">iii</div>
+                <div id="info4" class="tabcontent">
+                    <h2>¿Cómo obtener mi carta de residencia?</h2>
+                    <p>Para poder verificar tu identidad y asegurarnos de que eres un vecino o una vecina de Monterrey, necesitamos comprobar tu domicilio. En la mayoría de los casos, esto se hará a través de una credencial INE que muestre la dirección, pero comprendemos si al tramitar este documento decidiste que no la mostrara, o tu INE se encuentra desactualizada. Si este es tu caso, no dudes en atender a las diferentes oficinas que la Dirección de Concertación Social tiene para extender Cartas de Residencia, misma que te permitirá validar tu identidad. Los horarios son desde 09:00 hasta 17:00 horas los días lunes, martes, miércoles, jueves y viernes.</p>
+                    <h4>Las oficinas se encuentran en:</h4>
+                    <ul>
+                        <li>Los bajos del Palacio Municipal.</li>
+                        <li>Parque Tucán (Comisión Tripartita s/número esquina con Uranio. Colonia Valle de Infonavit 5º sector).</li>
+                        <li>Parque Aztlán (Av. Aztlán s/n entre Apolo y Prolongación Aztlán. Colonia San Bernabé).</li>
+                        <li>Centro de Atención Ciudadana de Garza Sada (Garza Sada 3900 esquina con Sierra de Taray. Colonia Sierra Ventana)</li>
+                        <li>Dirección de Participación Ciudadana (Esquina 5ta zona y Magallanes. Colonia Caracol)</li>
+                    </ul>
+                    <h4>La persona a la que se extenderá carta debe ir personalmente. Si es tu caso, no olvides llevar contigo:</h4>
+                    <ul>
+                        <li>Copia de tu credencial INE.</li>
+                        <li>Un comprobante de domicilio.</li>
+                        <li>2 vecinas o vecinos testigos que puedan dar fe de tu domicilio.</li>
+                    </ul>
+                </div>
+                <div id="info5" class="tabcontent">
+                    <h2>Propuestas</h2>
+                    <h4>¿Cuántas propuestas puedo cargar?</h4>
+                    <p>Puedes proponer únicamente un proyecto.</p>
+                    <h4>¿Cómo sé que mi propuesta es factible?</h4>
+                    <p>En el lenguaje técnico, decimos que una propuesta válida de debe ser jurídica, presupuestal y técnicamente factible. Esto significa que:</p>
+                    <ol>
+                        <li>No debe romper ninguna ley o reglamento.</li>
+                        <li>Debe hacer uso de al menos 2 millones 147 mil 231 pesos mexicanos y respetar la cantidad tope asignada para su sector.</li>
+                        <li>Debe ser realista y realizable a largo plazo. Es decir, debe poder llevarse a cabo con los recursos del municipio y no invadir las responsabilidades del gobierno estatal y federal. De la misma manera, debe tener efectos sociales positivos y no alterar el medio ambiente de manera negativa.</li>
+                    </ol>
+                    <h4>¿Qué pasa si en mi sector ninguna propuesta es calificada como factible?</h4>
+                    <p>Guiadas por la Dirección de Participación Ciudadana, el Consejo Distrital y las juntas vecinales existentes tomarán las ideas clave de las propuestas hechas por la ciudadanía para generar una propuesta factible.</p>
+                    <h4>¿Cuáles son las categorías bajo las que puedo proponer mi idea?</h4>
+                    <p>Movilidad sostenible, desarrollo urbano sostenible, salud, servicios básicos, y cultura y deporte.</p>
+                    <h4>¿Cuáles son los ejemplos de Movilidad Sostenible?</h4>
+                    <p>Algunos ejemplos serían la construcción, rehabilitación, mantenimiento, remodelación o equipamiento de ciclovías, banquetas y andadores. De cualquier manera, recuerda que la creatividad e innovación es fundamental en el Programa.</p>
+                    <h4>¿Cuáles son los ejemplos de Desarrollo Urbano Sostenible?</h4>
+                    <p>Todos aquellos que hagan de Monterrey una ciudad inteligente, compacta y amigable con su gente y el medio ambiente. Por ejemplo, aquellos relacionados con centros comunitarios, pluviales, áreas verdes, parques y plazas. También se incluyen la sustitución de energía eléctrica por energías alternativas o la instalación de nomenclaturas, señales y semáforos; así como cualquier otra acción para la regeneración urbana.</p>
+                    <h4>¿Cuáles son los ejemplos de Salud?</h4>
+                    <p>La salud en el presupuesto participativo está relacionada con la atención e innovación en salud pública. Es decir, proyectos para prevenir enfermedades, así como para proteger, promover y recuperar la salud colectiva de las y los regiomontanos. Mientras sea para beneficio de la población del municipio, los proyectos también pueden ser para uso de Órganos de Participación y Organizaciones de la Sociedad Civil.</p>
+                    <h4>¿Cuáles son los ejemplos de Cultura y Deporte?</h4>
+                    <p>Todos aquellos relacionados con el fomento, la difusión y el apoyo del arte, la cultura, la educación, el deporte y el civismo.</p>
+                    <h4>¿Cuáles son los ejemplos de Servicios Básicos?</h4>
+                    <p>Esta categoría es muy concreta, su mejor ejemplo es la introducción de la red de agua potable, drenaje sanitario, electricidad y alumbrado público.</p>
+                    <h4>¿Puedo proponer proyectos fuera de estas categorías?</h4>
+                    <p>Sí. En tanto el proyecto esté contemplado en el reglamento y cumpla con los requisitos técnicos, presupuestarios y jurídicos, puedes cargarlo y asociarlo a la categoría más próxima.</p>
+                    <h4>¿Puedo proponer un proyecto por etapas?</h4>
+                    <p>No. Para que un proyecto sea técnica y presupuestalmente factible, la ejecución debe implicar una función suficiente que respete los objetivos principales de la propuesta.</p>
+                </div>
+                <div id="info6" class="tabcontent">
+                    <h2>Votación</h2>
+                    <h4>¿Cómo se vota en esta plataforma, Decidimos Monterrey?</h4>
+                    <p>Para votar es necesario tener una cuenta validada; es decir, haber compartido los documentos de INE o Carta de Residencia correspondientes a la persona registrada donde se muestre de manera clara que esta tiene su domicilio en Monterrey.</p>
+                    <p>Más tarde, tras la revisión de propuestas, la votación se hace en la sección de propuestas, dando click en tu proyecto preferido.</p>
+                    <h4>¿Puedo conocer la votación en tiempo real?</h4>
+                    <p>No, los resultados de la votación se darán a conocer al final con el objetivo de evitar los sesgos en la decisión de cada ciudadano y ciudadana.</p>
+                    <h4>¿Puedo votar presencialmente?</h4>
+                    <p>Sí, la votación se hace en ciberespacios con apoyo de diversas bibliotecas en Monterrey. También a través de boleta física en los espacios y fechas dispuestas por la Dirección de Participación Ciudadana que se darán a conocer al acercarse la fecha de votación.</p>
+                    <h4>¿Puedo votar digital y presencialmente?</h4>
+                    <p>No, el proceso no permite votos duplicados. De encontrarse alguno, ambos votos serían eliminados.</p>
+                    <h4>¿Qué pasa si hay un empate?</h4>
+                    <p>En caso de empate en alguno de los sectores, se realizarán las rondas de votación que sean necesarias pudiendo ser elegidos únicamente los proyectos empatados.</p>
+                </div>
+                <div id="info7" class="tabcontent">
+                    <h2>Participación en bibliotecas</h2>
+                    <p>Para asegurarnos que todos y todas podamos participar en este presupuesto participativo, se han habilitan 22 bibliotecas municipales para cargar propuestas y votar proyectos. Puedes encontrar el mapa en la página principal. (Enlace externo)</p>
+                    <p>Aquí la lista:</p>
+                    <ul>
+                        <li>Biblioteca Mederos</li>
+                        <li>Biblioteca Mirador</li>
+                        <li>Biblioteca La Republica</li>
+                        <li>Centro Civico y Cultural Sierra Ventana</li>
+                        <li>Biblioteca Publica Col Independencia</li>
+                        <li>Biblioteca NO.3 VENUSTIANO CARRANZA</li>
+                        <li>Biblioteca Pública Parque España</li>
+                        <li>FERROCARRILERA</li>
+                        <li>Biblioteca Pública Municipal de Nueva Madero</li>
+                        <li>Biblioteca VIDRIERA</li>
+                        <li>Biblioteca CROC</li>
+                        <li>Biblioteca Pública CHURUBUSCO</li>
+                        <li>Biblioteca Pública</li>
+                        <li>Biblioteca Publica Hidalgo</li>
+                        <li>Biblioteca Publica Simon Bolivar</li>
+                        <li>Biblioteca Pública Estrella</li>
+                        <li>Biblioteca Pública Nueva Galicia</li>
+                        <li>Biblioteca San Martín</li>
+                        <li>Biblioteca VILLA MITRAS</li>
+                        <li>Biblioteca Modelo Valle de Infonavit</li>
+                        <li>Biblioteca Publica San Bernabé 1</li>
+                        <li>Biblioteca Lomas de Anahuac</li>
+                    </ul>
+                </div>
+                <div id="info8" class="tabcontent">
+                    <h2>Monto por sector</h2>
+                    <p>Este es el presupuesto asignado para cada uno de los 30 sectores:</p>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Sector</th>
+                            <th>Presupuesto asignado</th>
+                        </tr>
+                        <tr>
+                            <td>Burócratas y Mitras Norte</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Campana Altamira</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Céntrika</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Chapultepec</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>CROC y Gloria Mendiola</td>
+                            <td>$2,387,750.37 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Cumbres Vista Hermosa y Cumbres Norte</td>
+                            <td>$2,684,988.63 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Distrito Norte y Niños Héroes</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Distrito Tec - Roma sur - Contry</td>
+                            <td>$3,815,466.43 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Edison Industrial</td>
+                            <td>$2,332,562.58 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>El Uro, Los Cristales, La Bola y El Barro</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Fundadores - Las Torres - Las Brisas</td>
+                            <td>$2,519,092.73 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>La Alianza</td>
+                            <td>$2,507,016.47 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>La Estanzuela</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Loma Larga - Independiencia</td>
+                            <td>$2,329,196.06 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Médico, Gonzalitos y Obispado</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Moderna y Churubusco</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Puerta de Hierro y Cumbres Elite</td>
+                            <td>$4,982,161.82 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Purísima, Alameda, Centro y Fundidora</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>San Ángel</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>San Bernabé</td>
+                            <td>$3,064,107.07 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>San Jerónimo, Santa Maria y El Carmen</td>
+                            <td>$3,170,330.69 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Sátelite y Mederos</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Sierra Ventana</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Solidaridad</td>
+                            <td>$3,100,884.66 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Tierra y libertad</td>
+                            <td>$2,341,365.96 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Topo Chico y Penitenciaria</td>
+                            <td>$2,738,277.51 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Unidad modelo y Valle de Santa Lucía</td>
+                            <td>$2,429,921.03 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Valle Alto y El Diente</td>
+                            <td>$2,147,241 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Valle de Infonavit y Valle Verde</td>
+                            <td>$3,028,727.48 MXN</td>
+                        </tr>
+                        <tr>
+                            <td>Villa Mitras</td>
+                            <td>$2,818,306.06 MXN</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p><i>* Este monto está sujeto a cambios por el recuento final ante la fecha de cierre de la recaudación de este año.</i></p>
+                </div>
+                <div id="info9" class="tabcontent">
+                    <h2>¿A qué sector pertenece mi colonia?</h2>
+                    <p>Listado de colonias en cada uno de los 30 sectores del Presupuesto Participativo:</p>
+                    <form>
+                        <select name="sector" id="sector">
+                            <option value="0">-- Seleccione una opción --</option>
+                            <option value="1">Burócratas y Mitras Norte</option>
+                            <option value="2">Campana Altamira</option>
+                            <option value="3">Céntrika</option>
+                            <option value="4">Chapultepec</option>
+                            <option value="5">CROC y Gloria Mendiola</option>
+                            <option value="6">Cumbres Vista Hermosa y Cumbres Norte</option>
+                            <option value="7">Distrito Norte y Niños Héroes</option>
+                            <option value="8">Distrito Tec - Roma sur - Contry</option>
+                            <option value="9">Edison Industrial</option>
+                            <option value="10">El Uro, Los Cristales, La Bola y El Barro</option>
+                            <option value="11">Fundadores - Las Torres - Las Brisas</option>
+                            <option value="12">La Alianza</option>
+                            <option value="13">La Estanzuela</option>
+                            <option value="14">Loma Larga - Independiencia</option>
+                            <option value="15">Médico, Gonzalitos y Obispado</option>
+                            <option value="16">Moderna y Churubusco</option>
+                            <option value="17">Puerta de Hierro y Cumbres Elite</option>
+                            <option value="18">Purísima, Alameda, Centro y Fundidora</option>
+                            <option value="19">San Ángel</option>
+                            <option value="20">San Bernabé</option>
+                            <option value="21">San Jerónimo, Santa Maria y El Carmen</option>
+                            <option value="22">Sátelite y Mederos</option>
+                            <option value="23">Sierra Ventana</option>
+                            <option value="24">Solidaridad</option>
+                            <option value="25">Tierra y libertad</option>
+                            <option value="26">Topo Chico y Penitenciaria</option>
+                            <option value="27">Unidad modelo y Valle de Santa Lucía</option>
+                            <option value="28">Valle Alto y El Diente</option>
+                            <option value="29">Valle de Infonavit y Valle Verde</option>
+                            <option value="30">Villa Mitras</option>
+                        </select>
+                        <br><br>
+                        <center>
+                            <input type="submit" value="Submit">
+                        </center>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
