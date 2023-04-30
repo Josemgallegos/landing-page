@@ -332,12 +332,12 @@ footer p > a:hover {
 }
 
 .process-featured-button-3 {
-    padding: 10px 16px;
+    padding: 5px 10px;
     font-weight: 600;
     color: #252525;
-    background-color: #da9dae;
-    border: 1px solid #da9dae;
-    border-radius: 30px; 
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 5px; 
 }
 
 .process-featured-button-3-large {
@@ -451,9 +451,9 @@ footer p > a:hover {
     padding: 4px 16px;
     font-weight: 600;
     color: #252525;
-    background-color: #da9dae;
-    border: 1px solid #da9dae;
-    border-radius: 30px; 
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 5px; 
 }
 
 .process-button-card {
